@@ -12,11 +12,10 @@ import Login from './api/auth/signin'
 export default function Home({providers}) {
   const [posts, setPosts] = useState([])
 
-  const { data: session, status } = useSession();
+  const { data: session} = useSession();
   const getData= async()=>{
       const postQuery = query(collection(db,"posts"));
     const postSnap = await getDocs(postQuery)
-    // const getData= JSON.stringify(query)
     const usePost=postSnap.docs.map(doc=>doc.data())
     return setPosts(usePost)
 
@@ -25,9 +24,6 @@ export default function Home({providers}) {
       getData()
   },[db])
 const user = session?.user;
-// const data= JSON.parse(getData)
-console.log(getData);
-
   if (!session) return <Login providers={providers} />;
  
   return (
@@ -55,9 +51,8 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      // session,
       providers,
     
-    }, // will be passed to the page component as props
+    }, 
   };
 }
