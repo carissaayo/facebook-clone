@@ -19,7 +19,7 @@ const Login = ({providers}) => {
             className="p-5 bg-blue-500 rounded-full text-white text-center cursor-pointer"
             onClick={() =>
               signIn(provider.id, {
-                callbackUrl: "/https://facebook-clone-2-pi.vercel.app/",
+                callbackUrl: "https://facebook-clone-2-pi.vercel.app/",
               })
             }
           >
