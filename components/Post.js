@@ -4,7 +4,7 @@ import {ChatAltIcon,ShareIcon,ThumbUpIcon} from "@heroicons/react/outline"
 
 const Post = ({name,message,postImage,image,timestamp}) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col pl-4">
       <div className="p-5 bg-white mt-5 rounded-t-2xl shadown-sm">
         <div className="flex items-center space-x-2">
           <img
