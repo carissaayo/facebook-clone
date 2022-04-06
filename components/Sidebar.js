@@ -3,9 +3,9 @@ import {ChevronDownIcon,ShoppingBagIcon,UserGroupIcon} from "@heroicons/react/ou
 import {CalendarIcon,ClockIcon,DesktopComputerIcon,UsersIcon} from "@heroicons/react/solid"
 import SidebarRow from "./SidebarRow";
 const Sidebar = ({user}) => {
-    const {session,loading} = useSession()
+
   return (
-    <div className="p-2 mt-5 max-w-[600px] xl:min-w-[300px]">
+    <div className="hidden xs:block p-2 mt-5 max-w-[600px] xl:min-w-[300px]">
       <SidebarRow src={user.image} title={user.name} />
       <SidebarRow Icon={UsersIcon} title="Friends" />
       <SidebarRow Icon={UserGroupIcon} title="Groups" />

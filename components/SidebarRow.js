@@ -1,6 +1,6 @@
 const SidebarRow = ({Icon,title,src}) => {
   return (
-    <div className='cursor-pointer flex items-center space-x-2 p-4 hover:bg-gray-200 rounded-xl '> 
+    <div className='cursor-pointer flex items-center space-x-2 p-1 xs:p-2 sm:p-4 hover:bg-gray-200 rounded-xl '> 
       {src && <img
     className="rounded-full"
     alt="user"

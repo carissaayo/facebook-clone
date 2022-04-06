@@ -5,7 +5,7 @@ import Image from "next/image";
 const Login = ({providers}) => {
   return (
     <div className="grid place-items-center">
-      <Image src="/facebook.png"  alt="facebook" width={400} height={400} objectFit="contain" />
+      <Image src="/facebook.png"  alt="facebook" width={300} height={300} objectFit="contain" />
       <h1 onClick={signIn}>
         {Object.values(providers).map((provider) => (
           <button
