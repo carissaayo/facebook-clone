@@ -7,7 +7,7 @@ import Header from '../components/Header'
 import Sidebar from '../components/Sidebar';
 import Widgets from '../components/Widgets';
 import { db } from '../firebase';
-import Login from './api/auth/signin'
+import Login from '../components/Login'
 
 export default function Home({providers}) {
   const [posts, setPosts] = useState([])
